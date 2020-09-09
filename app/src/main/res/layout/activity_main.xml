@@ -83,9 +83,20 @@
         android:layout_below="@+id/point"
         android:layout_marginTop="30dp"
         android:background="@drawable/bg_btn"
-        android:text="查询电量"
+        android:text="@string/button_search"
         android:textColor="#ffffff"
         android:textSize="20sp"/>
+
+<!--    <Button-->
+<!--        android:id="@+id/btn_history"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:layout_below="@+id/btn_search"-->
+<!--        android:layout_marginTop="30dp"-->
+<!--        android:background="@drawable/bg_btn"-->
+<!--        android:text="@string/button_history"-->
+<!--        android:textColor="#ffffff"-->
+<!--        android:textSize="20sp"/>-->
 
     <TextView
         android:id="@+id/mTv_result"
@@ -94,7 +105,7 @@
         android:textColor="#000000"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/btn_search"
+        android:layout_below="@+id/btn_search"
         android:layout_marginTop="30dp"/>
 
 </RelativeLayout>
