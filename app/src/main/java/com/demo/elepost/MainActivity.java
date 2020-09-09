@@ -9,7 +9,6 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
 import android.os.Bundle;
-import android.os.StrictMode;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
@@ -44,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
 
     private Context mContext;
 
+    private static final String TAG = "MainActivity";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -166,7 +166,13 @@ public class MainActivity extends AppCompatActivity {
                                     }
                                 });
                             } catch (IOException e) {
-                                e.printStackTrace();
+                                Log.e(TAG, e.getMessage());
+                                runOnUiThread(new Runnable() {
+                                    @Override
+                                    public void run() {
+                                        Toast.makeText(mContext,"请检查网络", LENGTH_SHORT).show();
+                                    }
+                                });
                             }
                         }
                     });
