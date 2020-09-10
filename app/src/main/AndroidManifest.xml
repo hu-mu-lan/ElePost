@@ -19,6 +19,7 @@
                 <!-- 启动activity -->
             </intent-filter>
         </activity>
+        <activity android:name=".HistoryActivity"/>
     </application>
 
 </manifest>

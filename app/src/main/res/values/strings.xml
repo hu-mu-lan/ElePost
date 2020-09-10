@@ -3,6 +3,8 @@
     <string name="area">校区：</string>
     <string name="point">房间号：</string>
     <string name="search">电量查询</string>
+    <string name="history">历史记录</string>
+    <string name="hint">请输入房间号</string>
     <string name="title_activity_navigation">NavigationActivity</string>
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>

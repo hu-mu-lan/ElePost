@@ -68,7 +68,7 @@
         android:background="@drawable/bg_username"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
-        android:hint="房间号"
+        android:hint="@string/hint"
         android:inputType="number"
         android:layout_below="@+id/text_point"
         android:layout_marginTop="15dp"
@@ -87,16 +87,16 @@
         android:textColor="#ffffff"
         android:textSize="20sp"/>
 
-<!--    <Button-->
-<!--        android:id="@+id/btn_history"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="50dp"-->
-<!--        android:layout_below="@+id/btn_search"-->
-<!--        android:layout_marginTop="30dp"-->
-<!--        android:background="@drawable/bg_btn"-->
-<!--        android:text="@string/button_history"-->
-<!--        android:textColor="#ffffff"-->
-<!--        android:textSize="20sp"/>-->
+    <Button
+        android:id="@+id/btn_history"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/btn_search"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/bg_btn"
+        android:text="@string/button_history"
+        android:textColor="#ffffff"
+        android:textSize="20sp"/>
 
     <TextView
         android:id="@+id/mTv_result"
@@ -105,7 +105,7 @@
         android:textColor="#000000"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/btn_search"
+        android:layout_below="@+id/btn_history"
         android:layout_marginTop="30dp"/>
 
 </RelativeLayout>
